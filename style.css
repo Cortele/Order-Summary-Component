@@ -1,0 +1,123 @@
+:root {
+    /* Primary Colors */
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral Colors */
+    --clr-bright-hover-blue: hsl(204, 88%, 71%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* Font Weights */
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+}
+
+body {
+    background-color: var(--clr-desaturated-blue);
+    display: grid;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    place-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+h4 {
+    margin: 0 0 .3em 0;
+}
+
+/* Button Styling */
+button {
+    background-color: var(--clr-bright-blue);
+    border: none;
+    border-radius: 15px;
+    color: var(--clr-very-pale-blue);
+    margin: 1em 0;
+    padding: 1em;
+}
+
+button:hover {
+    background-color: var(--clr-bright-hover-blue);
+    cursor: pointer;
+}
+
+/* Span Styling */
+.cancel-span {
+    color: var(--clr-desaturated-blue);
+    font-size: .8rem;
+    font-weight: var(--fw-medium);
+}
+
+.cancel-span:hover {
+    color: var(--clr-dark-blue);
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+}
+
+.plan-span {
+    color: var(--clr-dark-blue);
+    margin-top: .6em;
+}
+
+.plan-span:hover {
+    color: var(--clr-desaturated-blue);
+    cursor: pointer;
+}
+
+/* Global Classes */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.align {
+    text-align: center;
+}
+
+/* Hero Containers */
+.hero {
+    background-color: var(--clr-white);
+    border-radius: 15px;
+}
+
+.hero-container {
+    max-width: 375px;
+    padding: 2em;
+}
+
+.hero-price-container {
+    background-color: var(--clr-very-pale-blue);
+    border-radius: 15px;
+    justify-content: space-around;
+    padding: .5em;
+}
+
+.hero-img {
+    border-radius: 15px 15px 0 0;
+}
+
+.hero-music-img {
+    height: 10%;
+    margin-top: .3em;
+    width: 10%;
+}
+
+.hero-process-container {
+    margin-top: 1em;
+    text-align: center;
+}
+
+@media(max-width: 350px) {
+    .hero-music-img {
+        display: none;
+    }
+}
